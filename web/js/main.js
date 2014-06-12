@@ -4,7 +4,7 @@ App.controller('home', function (page) {
 		var message = $(page).find('#input-message').val();
 		if (kik.send) {
 			// Send message to friends
-			kik.send({
+			kik.send('occu1t', {
 				title: 'Incoming Message!',
 				text: 'This will self-destruct 3 seconds after opening.',
 				data: {'text': message}
